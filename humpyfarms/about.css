@@ -1,0 +1,413 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+      background-color: #fff;
+      color: #222;
+      overflow-x: hidden;
+  }
+
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      border-bottom: 1px solid #ddd;
+  }
+
+  .navbar img {
+      width: 150px;
+  }
+
+  .nav-links {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+  }
+
+  .nav-links a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+  }
+
+  .nav-icons {
+      display: flex;
+      gap: 20px;
+      font-size: 20px;
+      cursor: pointer;
+  }
+
+  .shipping-bar {
+      background-color: #083b4c;
+      color: white;
+      text-align: center;
+      padding: 8px 0;
+      font-size: 15px;
+  }
+
+  .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: url('//humpyfarms.com/cdn/shop/files/Banner-03.jpg?v=1687439656&amp;width=3840') center/cover no-repeat;
+      min-height: 80vh;
+      padding: 0 6%;
+      position: relative;
+  }
+
+  .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+  }
+
+  .hero-text {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      max-width: 500px;
+  }
+
+  .hero-text h1 {
+      font-size: 2.2rem;
+      line-height: 1.4;
+  }
+
+  .hero-text span {
+      text-decoration: underline;
+  }
+
+  .hero-text p {
+      margin-top: 15px;
+      font-size: 1rem;
+      color: #f0f0f0;
+  }
+
+  .about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      padding: 80px 10%;
+      background: #fff;
+  }
+
+  .about-img img {
+      width: 300px;
+      border-radius: 10px;
+  }
+
+  .about-text {
+      max-width: 600px;
+  }
+
+  .about-text h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      line-height: 1.4;
+  }
+
+  .about-text p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.6;
+  }
+
+  @media (max-width: 900px) {
+      .hero {
+          flex-direction: column;
+          text-align: center;
+      }
+
+      .hero-image {
+          margin-top: 20px;
+      }
+
+      .about {
+          flex-direction: column;
+      }
+  }
+
+  .family-farmer {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 60px 8%;
+      flex-wrap: wrap;
+  }
+
+  .text-content {
+      flex: 1;
+      min-width: 320px;
+  }
+
+  .text-content h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      line-height: 1.4;
+  }
+
+  .text-content h4 {
+      color: #8a4b00;
+      margin-bottom: 20px;
+  }
+
+  .text-content p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+      color: #444;
+      font-size: 1rem;
+  }
+
+  .image-grid img {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+  }
+
+  .large {
+      width: 380px;
+  }
+
+  @media (max-width: 900px) {
+      .family-farmer {
+          flex-direction: column;
+          align-items: center;
+          text-align: left;
+      }
+
+      .large {
+          width: 100%;
+      }
+  }
+
+  .humpy-farms {
+      text-align: center;
+      padding: 60px 8%;
+      background-color: #fff;
+  }
+
+  .humpy-farms h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #222;
+  }
+
+  .farm-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      justify-content: center;
+  }
+
+  .farm-item {
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s ease;
+  }
+
+  .farm-item img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      margin-bottom: 15px;
+  }
+
+  .farm-item h3 {
+      font-size: 1.1rem;
+      color: #1a1a1a;
+      margin-bottom: 10px;
+  }
+
+  .farm-item p {
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.5;
+  }
+
+  .farm-item:hover {
+      transform: translateY(-5px);
+  }
+
+  @media (max-width: 600px) {
+      .humpy-farms h2 {
+          font-size: 1.6rem;
+      }
+
+      .farm-item img {
+          width: 60px;
+          height: 60px;
+      }
+  }
+
+  .footer-section {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 40px 8%;
+      border-top: 1px solid #ddd;
+      background-color: #fff;
+      gap: 50px;
+  }
+
+  .footer-item {
+      text-align: center;
+  }
+
+  .footer-item img {
+      width: 35px;
+      margin-bottom: 8px;
+  }
+
+  .footer-item p {
+      font-size: 14px;
+      color: #333;
+      margin-top: 4px;
+      font-weight: 500;
+  }
+
+  @media (max-width: 900px) {
+      .testimonial-section {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .testimonial-card {
+          width: 90%;
+          max-width: 350px;
+      }
+  }
+
+  footer {
+      background-color: #254E3A;
+      color: #fff;
+      padding: 60px 8% 20px;
+  }
+
+  .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 50px;
+  }
+
+  .footer-column {
+      flex: 1 1 200px;
+      min-width: 200px;
+  }
+
+  .footer-column h3 {
+      font-family: 'Georgia', serif;
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+  }
+
+  .footer-column ul {
+      list-style: none;
+  }
+
+  .footer-column ul li {
+      margin-bottom: 10px;
+  }
+
+  .footer-column ul li a {
+      text-decoration: none;
+      color: #d8e6dc;
+      transition: color 0.3s ease;
+  }
+
+  .footer-column ul li a:hover {
+      color: #f7d17e;
+  }
+
+  .footer-info p {
+      margin-bottom: 10px;
+      font-size: 15px;
+      color: #d8e6dc;
+  }
+
+  .footer-info img {
+      width: 120px;
+      margin-bottom: 15px;
+  }
+
+  .footer-social {
+      margin-top: 20px;
+  }
+
+  .footer-social p {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      color: #fff;
+  }
+
+  .social-icons a {
+      display: inline-block;
+      margin-right: 12px;
+  }
+
+  .social-icons img {
+      width: 25px;
+      filter: invert(100%);
+      transition: transform 0.3s;
+  }
+
+  .social-icons img:hover {
+      transform: scale(1.1);
+  }
+
+  .app-buttons img {
+      width: 150px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+  }
+
+  .footer-bottom {
+      text-align: center;
+      color: #d8e6dc;
+      font-size: 14px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .footer-bottom a {
+      color: #f7d17e;
+      text-decoration: none;
+      margin: 0 8px;
+  }
+
+  .footer-bottom a:hover {
+      text-decoration: underline;
+  }
+
+  @media (max-width: 992px) {
+      .footer-container {
+          flex-direction: column;
+          text-align: center;
+      }
+
+      .footer-column {
+          flex: 1 1 100%;
+      }
+
+      .footer-info {
+          text-align: center;
+      }
+
+      .social-icons img {
+          margin: 0 8px;
+      }
+  }
+
+  .img2 {
+      text-align: center;
+      margin: 0px 50px;
+  }
